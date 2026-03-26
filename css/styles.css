@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #90C7E3;
+  color: #5a5a5a;
+  margin: 0;
+  background-image: linear-gradient(to bottom, #135b0d 20%, #90C7E3 60%);
+  background-repeat: no-repeat;
+  font-family: Verdana, Arial, sans-serif;
+  display: flex;
+}
+
+#wrapper {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #135b0d;
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+  padding: 1em;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:link {
+  color: #FFFFFF;
+}
+
+header a:visited {
+  color: #FFFFFF;
+}
+
+header a:hover {
+  color: #90C7E3;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h2 {
+  color: #135b0d;
+  font-family: Georgia, serif;
+}
+
+h3 {
+  color: #1976D2;
+  font-family: Georgia, serif;
+}
+
+nav {
+  font-size: 1.2em;
+  text-align: center;
+  background-color: white;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link {
+  color: #135b0d;
+}
+
+nav a:visited {
+  color: #135b0d;
+}
+
+nav a:hover {
+  color: #A52A2A;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  padding: 0.5em 1em;
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+main {
+  display: block;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.contacthero {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+}
+
+.contact-image {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+footer {
+  background-color: #FFF;
+  font-size: 0.70em;
+  font-style: italic;
+  padding: 1em;
+  text-align: center;
+  clear: both; 
+}
+
+@media screen and (min-width: 600px) {
+  /* Media query for screens 600px or greater */
+
+  h1 {
+      font-size: 2em;
+      letter-spacing: 0.25em;
+  }
+
+  nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-right: 2em;
+  }
+
+  nav li {
+      width: 12em;
+      border-bottom: none;
+  }
+
+  section {
+      padding-left: 2em;
+      padding-right: 2em;
+  }
+
+  #flow {
+      display: flex;
+      flex-direction: row;
+  }
+
+  #mobile {
+      display: none;
+  }
+
+  #desktop {
+      display: inline;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  /* Media query for screens 1024px or greater */
+  nav ul {
+      padding-right: 0 10%;
+      padding-left: 0 10%;
+  }
+
+  #wrapper {
+      margin: auto;
+      width: 80%;
+  }
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1000px; 
+  margin: 0 auto;
+}
+
+.image-container figure {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.image-container img {
+  max-width: 100%; 
+  height: auto;
+}
+
+/* Hero Image in index.html */
+.homehero {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-content {
+  flex: 1; 
+  padding-left: 5em;
+  padding-right: 5em;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+.video-container {
+  width: 40%; 
+  margin-left: 1em; 
+}
+
+video {
+  width: 100%; 
+  height: auto;
+}
+
+/* Image in about.html */
+.about-image {
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Image container in portfolio.html */
+.portfolio-image {
+  max-height: 300px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.portfolio-item {
+  text-align: center;
+  margin: 0 10px 20px; 
+}
+
+.portfolio-item img {
+  max-width: 100%; 
+  height: auto;
+  margin-top: 10px; 
+  margin-bottom: 20px;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+
+.portfolio-item figcaption {
+  margin-top: 10px; 
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.page-title {
+  text-align: center;
+}
+
+/* Pricing Table Styles in contact.html */
+.pricing-table {
+  width: calc(50% - 1em); 
+  margin-top: 1em;
+  float: right;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 0.5em;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+/* Form Styles in contact.html */
+.contact-form {
+  max-width: calc(50% - 1em); 
+  float: left;
+}
+
+.contact-form label {
+  margin-bottom: 0.5em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; 
+  padding: 0.5em;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+
+.contact-form textarea {
+  width: 100%;
+}
+
+.contact-form,
+.pricing-table {
+  width: 48%; 
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens, you can modify the breakpoint as needed */
+
+  .main-content {
+    flex-direction: column; 
+  }
+
+  .contact-form,
+  .pricing-table {
+    width: 100%; 
+  }
+}
+
+/* Clear Floats */
+#wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}

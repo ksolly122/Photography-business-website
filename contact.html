@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavin's Flicks - Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="manifest" href="media/site.webmanifest">
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Gavin Newell Flicks</h1>
+        </header>
+    
+        <nav>
+            <ul class="horizontal-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section class="contact-form">
+                <h2  class="page-title">Contact Gavin</h2>
+                <form action="#" method="post">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+            <section class="pricing-table">
+                <h2>Photoshoot Pricing</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>30 minute session</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>1 hour session</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Per photo</td>
+                        <td>$5 each</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="video-container">
+                <h2>Featured Video</h2>
+                <video controls type="video/mp4" autoplay muted>
+                    <source src="media/portfolioSlideShow.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </main>
+
+        
+        <footer>
+            <span class="footer"><i>Copyright © 2023 Gavin's Flicks</i></span><br>
+            <a href="mailto:contact@gavinsflicks.com">contact@gavinsflicks.com</a>
+        </footer>
+    </div>
+</body>
+</html>
